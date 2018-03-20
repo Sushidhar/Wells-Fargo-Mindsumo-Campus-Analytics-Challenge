@@ -1,0 +1,1649 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0912.2119                               -->
+<workbook source-build='10.2.5 (10200.17.0912.2119)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Fake+Data+and+Metadata+-+Final+no+pass' inline='true' name='federated.10h7wul1d5vybm15odi0g1i9wf47' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Fake+Data+and+Metadata+-+Final+no+pass' name='excel-direct.0cutblf14ntrqr116u9x81aug6q2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Sushidhar/Downloads/Fake+Data+and+Metadata+-+Final+no+pass.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0cutblf14ntrqr116u9x81aug6q2' name='Daily use of a WF credit card ' table='[&apos;Daily use of a WF credit card $&apos;]' type='table'>
+          <columns gridOrigin='A1:F3469:no:A1:F3469:0' header='yes' outcome='6'>
+            <column datatype='integer' name='masked_id' ordinal='0' />
+            <column datatype='date' name='Date' ordinal='1' />
+            <column datatype='string' name='Des1' ordinal='2' />
+            <column datatype='string' name='Des2' ordinal='3' />
+            <column datatype='string' name='Des3' ordinal='4' />
+            <column datatype='integer' name='Payment' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>masked_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[masked_id]</local-name>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias>masked_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Des1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Des1]</local-name>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias>Des1</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Des2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Des2]</local-name>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias>Des2</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Des3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Des3]</local-name>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias>Des3</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Payment]</local-name>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias>Payment</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Daily use of a WF credit card ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F3469:no:A1:F3469:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Des11' datatype='string' name='[Des1]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Masked Id' datatype='integer' name='[masked_id]' role='dimension' type='ordinal' />
+      <column-instance column='[Des1]' derivation='Count' name='[cnt:Des1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Des1]' derivation='Count' name='[diff:cnt:Des1:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Des1]' derivation='None' name='[none:Des1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[masked_id]' derivation='None' name='[none:masked_id:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Des1]' derivation='Count' name='[rank:cnt:Des1:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Des1]' derivation='Count' name='[rank:cnt:Des1:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Des1]' derivation='Count' name='[rank:cnt:Des1:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.10h7wul1d5vybm15odi0g1i9wf47].[Des1]' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[Des1]' derivation='Count' name='[rank:cnt:Des1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[diff:cnt:Des1:qk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[rank:cnt:Des1:qk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[rank:cnt:Des1:qk:1]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[rank:cnt:Des1:qk:2]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[rank:cnt:Des1:qk:3]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[cnt:Des1:qk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Des1:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;CLOTHES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HOBBIES&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TAX&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AIRLINES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;FINANCIAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PET/VETERINARY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AUTO&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GIFTS&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RECREATION&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DEPARTMENT STORES&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;JEWELRY&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;USED ITEMS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;COMPUTERS&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;HOT FILE&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TELECOM&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BARS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GOVERNMENT SERVICES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RESTAURANTS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ENTERTAINMENT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PAWN SHOPS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ALCOHOL&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;FURNISHINGS&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PHARMACY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;EDUCATION&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;OFFICE SUPPLY/STATIONERY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;WHOLESALE CLUBS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BUILDING SUPPLY/WHOLESALE&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;GROCERIES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RETAIL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;DIRECT MARKETING&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;LEGAL&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UTILITIES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;DISCOUNT STORES&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;LUGGAGE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VARIETY STORES&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ELECTRONICS&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;OTHER&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;FAST FOOD&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PERSONAL SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;CONTRACTOR/BUSINESS SERVICES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;HOTEL/MOTEL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRANSPORTATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CHARITY/COMMUNITY ORG&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HEALTHCARE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SPORTING GOODS&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANTIQUES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GAMBLING&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;POSTAGE/DELIVERY&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DURABLES&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NONCLASSIFIABLE ESTABLISHMENTS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;VEHICLE RENTAL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;CONVENIENCE STORES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;INSURANCE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TRAVEL&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APPLIANCES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GAS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;REAL ESTATE&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Fake+Data+and+Metadata+-+Final+no+pass' name='federated.10h7wul1d5vybm15odi0g1i9wf47' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10h7wul1d5vybm15odi0g1i9wf47'>
+            <column caption='Des11' datatype='string' name='[Des1]' role='dimension' type='nominal' />
+            <column-instance column='[Des1]' derivation='Count' name='[cnt:Des1:qk]' pivot='key' type='quantitative' />
+            <column caption='Masked Id' datatype='integer' name='[masked_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Des1]' derivation='None' name='[none:Des1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[masked_id]' derivation='None' name='[none:masked_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Des1]' derivation='Count' name='[rank:cnt:Des1:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.10h7wul1d5vybm15odi0g1i9wf47].[Des1]' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]'>
+            <groupfilter function='member' level='[none:masked_id:ok]' member='7' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.10h7wul1d5vybm15odi0g1i9wf47].[rank:cnt:Des1:qk:3]' included-values='in-range'>
+            <min>1</min>
+            <max>5</max>
+          </filter>
+          <slices>
+            <column>[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]</column>
+            <column>[federated.10h7wul1d5vybm15odi0g1i9wf47].[rank:cnt:Des1:qk:3]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]' value='625' />
+            <format attr='width' value='713' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:Des1:nk]' />
+              <wedge-size column='[federated.10h7wul1d5vybm15odi0g1i9wf47].[cnt:Des1:qk]' />
+              <size column='[federated.10h7wul1d5vybm15odi0g1i9wf47].[rank:cnt:Des1:qk:3]' />
+              <text column='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:Des1:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9670165777206421' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:Des1:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.10h7wul1d5vybm15odi0g1i9wf47].[rank:cnt:Des1:qk:3]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10h7wul1d5vybm15odi0g1i9wf47].[min:Calculation_291608135887286275:nk]</field>
+            <field>[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:Des1:nk]</field>
+            <field>[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id (Daily use of a WF credit card ):ok]</field>
+            <field>[federated.10h7wul1d5vybm15odi0g1i9wf47].[none:masked_id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO2daXBc2XXff2/tvRuNxr4TJAHuC7iB5Cyc0YykGcnWjKWU7SQlV5JKqvIx
+      Kn1JKqmS47Ilq+LEtpIocayUPVEpo5JGM1ZGlqWxNCtnH5LgMhyCIAmSWEmAQKP35b2bDw3S
+      5HADiO5+7zXebwpFDPr164PG/fc9595z7pGEEAIXl1WKbLUBLi5W4grAZVXjCsBlVeMKwGVV
+      4wrAZVXjCsBlVeMKwGVVo17/Jp1Ok8/nrbTFxaXqSO5G2OrCFCb5Yp50IUXRKGIIg6JRwBQG
+      LcU8qqwiKSooGsgqkieMpPmsNrtiqPe/xMUplAZ3jpnUDFeSU8wkrzKTusJ0Yop4Zp5EboFE
+      LkFhccALIRAIhBDowuQb85eImgZIUukLqSQC1YPki4I3ghxuQw61IoXbkcOtyJEOpGALqDqS
+      5DyP2hWAQxFCkMgtMD5/mbNXzzCxMM6luVGuJq+QyieXfT9TmGAaIAy42Scw8ohCGpGZK103
+      cfS250reOqRoN0p9L3LTJpSWzcjRNUie0IP+elXDdYEcRDqf4sTkEKenT3Hu6jCTiQnS+VRZ
+      7q0Lk/84d5GoMMpyP8kXRY6uQWnbgdI1iNK205aulCsAG1MwClyev8jQ+BGGxo9wfnaEolms
+      yGuVWwC3v0AApWUbau+jKJ2DyPU9SLL1Doj1FrjcQtEsMjp7nvcvvcPRsQ+ZiI8hqIHPqHwK
+      49I7GJfeAUlGbuxH7X0Mdd1nUBr7LTPLnQFsgBCC2fQMh8+/zpvnX2NqYaLkk1eRis8Ad0NS
+      kBv70LZ8BbXvs6V4QpKq9/KuAKwjV8xxcnKI10b+nmNjH2FUe/DdhGUCuBlPCLX3MbRNv4HS
+      vhtJ0Sr+kq4ALCCZS3D4whu8cubnTMTHrDYHsIkAbiAht25D3/GPUdc+hqT5K/ZKbgxQJYQQ
+      zGWu8fKpl3j7whssZONWm2RjBObkENnJIaRgM/rAV9G2fBnJEyz7K7kzQBWYSV7l56f/H6+N
+      vEKmkLHanDtirxngdqRQC/rA76Ftfua++wu55BU+ODnFQ/u28sYbb3DwkUc5N3yaidEzTM4V
+      2Ld/P6aQiGo5dwaoJMlcgr85+QKvDv+SdCFttTmORiSmyL3+x+SPPIe+6/dKM8Jd9hVOHx3i
+      8myBvLmF8ZEhTrStZ+zsOb74xH5efusSvY1eXn73LIVrY64AKkG2kOXt0Tf58bEfML+4g+pS
+      HkRiktxr3yJ/9Pt4Hv46au+hUu7STXw4dBzDEHwyto+2dduYHjmBcQc/R9Z0VwDlxBQmJyeH
+      eP7I/2H02nmrzalpRHyM7Mv/BqVzL56Hv4bSvLn08/w1Nu59iv072nj32GXC4To2dWn88vg4
+      yBrRSKD0bzhEJJh3Y4ByIIRgPjPHD49+n7fOv1b1NfxyYPcY4J4oHvRdX0Xf+6+WnW7hCmCF
+      FM0ih8+/zg+Pft/R7o6jBbCIFO3B+8jXUdY8uuTNNFcAK2AmeZW/ev8vODr2oePTFWpBAADI
+      CtrmZ/E8/PUlLZs6Mgb4+YvPU1T9mHoEf+EqObys27KL80depaBE2dSp8LNjC9QHVB5ZH+RX
+      Z7Ns6V/LwNp6vvmd/8vXv/YvefvlH/L2xTz/9Dce4fxsEXl2mHhRQQs1I8+dJbr+IPMTZ3nq
+      qadue31TmAyNH+G7h/+MZC5hwTvgcldMg8KJH2NMHMP75O+jtG6/5+XOq2AADBQ62tvx6iqm
+      WfK3VSWNobXzpS89RURXiDW3EQl4EaaJEKCoKufOnOGpQzv5eDzLE585xMDgw3Q0hjBNk5Tw
+      8OwzzyLSswQau0lPjZDJ3555mSlk+N473+VPXv0jd/DbGHN2hPSP/jm59/4nwrh7qa8jBYCi
+      kr42jicUwxNu4umnn2ZtRw/J+BjJhQWyhkAppMlJHhRN59Enn2Zg01pOfnKWqdl5hoc+uO2W
+      2USchcQcqZwJSOzdsY73hs7eeFwIwdTCJH/4y//AqyOvODLQXXUYOfJvf4fMy19D3GXn3ZEx
+      wJUrV2hqamL88mXMfJITZy6wdtMAbSGT94bOs3egH1OPUoxPIWSJDz4aoqF9Dd2tDTQ3NZae
+      Hw1yJWnQEFSZTRYIa0XefHeIfQcfIp9eIBaLcebMGfr7+xFCcGTsA/7XO/+tZlMYaiYGuAtS
+      XTe+z38TpXXbrT93ogCqiWEavHzqRV4Yer5ixSh2oNYFAIAexPv4v0fd8IUbq0SODIKrRa6Y
+      5bkPvserZ1+x2hSXcpBPkv3Fv0NPTKDv/hdIsuIK4G7EM/N89/CfcnzimNWmuJQTYZI//OeI
+      +Diex/6tK4A7MZO6yn959VtcuHbOalNcKkTh5AuYyWlXAJ9mamGCP/7VHzCdmLTaFJcKY4y+
+      5QrgZsbnL/PtX/8BV5NXrDbFpUq4AlhkIj7Ot371+8ymZqw2xaWKuAIAJuJjfPPv3cG/GnHm
+      TnAZmVqY5E9e/SNmU1etNsXFAla1AOKZef7s9W8zuTBhtSkuFrFqBZAtZPnT17/NxbkLVpvi
+      YiGrUgCGafC9d/87Z658bLUpLhaz6gQghOCFoec5fOENq01xsQGrTgDvXjzMT0++YLUZLjZh
+      VQlg9Np5/ve7/8PN5Xe5waoRQCqX5L++8Z8fqHuKS+2yKgRgCpO//uAvmViwx0G0Lvah5gUg
+      hOD1kV9x+PzrVpviYkNqXgATC+P84KO/dvyxJS6VoaYFYJomf/H2d1y/3+Wu1KwAhBC8/PFL
+      nL16xmpTXGxMzQpgPD7GT0/82GozXGxOTQrAMA2+/+H33DP5Xe5LTQrgndG33GJ2lyVRcwJI
+      5hI8f+Q5q81wcQg1JQAhBD879RLX0rNWm+LiEGpKAFeTV/jlmb+12gwXB1EzAhBC8KNjP7Bt
+      F0YXe1IzArg0N8rhC266g8vyqAkBCCF46cSPrDbDxYHUhAAuzl3go8u3n/nv4nI/HC8AU5j8
+      +NjzFM2C1aa4OBDHC2BqYYJj4x9abYaLQ3G8AH7xyd+6JY4uD4yjBRDPxN1CF5cV4WgBvHn+
+      16QLKavNcHEwjhVAwci7rYtcVoxjBXB6+hRTC24TC5eV4UgBCCF489xrbp2vy4pxpACSuSQf
+      Xn7XajNcagBHCuCDS++QK+asNsOlBnCcAIQQvDv6ltVmuNQIjhPAXPoaIzNnrTbDpUZwnACO
+      TxwlW3Rz/l1WjhAOa5InhOD9S+9YbYaLwxECrhX9HEu2OUsA2UKGkZlhq81wcShCwKVcHR8k
+      uriQracoFGcJ4OLcKMlcwmozXBxGzlQ4nW7mw0QnVwsBQLrxmKME8NHl9602wcVBxItejiTa
+      OZFqJWV67niNYwQghOD09EmrzXCxOULAVD7Ee4kuzmUayIt7D3HHCGAhG+fy/EWrzXCxKXlT
+      YSTTwPuJTibzYW52c+6FYwQwFr9MwXDLHl1uZaHo4USqlWPJNhYM37Kf7xgBuMecu1zHXHRz
+      jiQ7+CTdROE+bs69cIwAzkyfstoEF4vJmwrnMjGOJNu5lIuyVDfnXjhCAPlinvG42+ButZIy
+      tEU3p525oo9yDPzrOEIAqVySVDoJgnL+7i42xhQwUwhwNNnOyVQreaFQiT++IwRQvJLniZFD
+      JLUUC/oC8544c9550lqGrJJ1RVFDFIXEhUyMo8l2LmTrMSucruYIASSm5/EXffiLPpoyDQAI
+      BEXJIKfmFkWxwJx3jgU9QVJPYWK6wnAIQkBOqBxPtjKUamPmU7u1lcQZArgSv+1nEhKaUNEK
+      KsFCgLZU643HipJBQk8Q1xeY886XvvckyCk5DNmopuku90AImC36OZro4GS6haypVd0G2wtA
+      CEH62vLyf1ShEM3VEc3V0ZPoAsDEJKvmSGop5rxzJPQk8544CS1JXs1XwnSXuyAEXMjW81Gi
+      gwvZegwUy2yxvQAAMgsrb3YnI9/RjTIlk4yaZc5TminmPXHingXSWpqiZLhuVBnJmQonUy0c
+      SXYwWwggbPDm2l4AwhRk5itz+JWEhCIUgoUAwULglsfycn4xnkjeEEVCS5LWMgjJPY1iOcwV
+      fBxZXM1Jm7rV5tyC7QVQyOQp5qqfAqGbOg3ZGA3Z2I2fGZJBVsmR0lLMe+PEF1ek5j1xTNk9
+      n/RmhIDxfJgPFro4l42taLe2ktjTqpvIJuxT/qgIhUDRT6DopynTCJTcKIEgraWZ88RJ6Anm
+      vPPMeeLklRwFubiq3KicqXA208j7C51MF0LY/Ze3vQAKWXsHqNLif8FCkGAheOPnAkFOyZPS
+      UiwsxhZz3nlSWpq0mrb7uFgWQsCC4eF4qo1jyTaShtdqk5aM7QWQS2WtNuGBkJDwGh68hodY
+      th74h6A7r+RJaMnFmWKehJ4k7lnAlExHxRelpLQwHyY6GM402tbNuRe2t9iwwP+vFNeDbl/R
+      h6/ou+FGARiYpLQU8cUNvdIy7QI5JUdBsdd7kFtMSvso0clYPoKTpzPbCyCfXh0nwCnIhAsh
+      woUQncl2oLR3kVcKpLQUc575kivljZPUUmS06sdGiaLOiVQbQ6lW5suclGYVtheAWVy9O7cy
+      8h3dqFJ8kVvc5U7ecKMSeoKibJTVjTIFXC0E+TDRwel0M4UKJaVZhf0FYLrLizdzPej2GT58
+      KR/ctEVSkIok9SQJLcm8N76YArJAWs0sOwWkKGTOZWIcW0xKs8OmVSW4TQCjwycZPnOKOaWT
+      3376gBU23YJZdAWwVDSh3kgB6Up2ACU3qrQalWZ+cbd7zlvauyjIi7HFTWM7a6oMJdsYSrYy
+      W6xeUppV3CaAnr4tjJw6wcGHB6yw5zZMY/W6QOVARsZnePEZXhoW3SgouVIZNbsoiiQp7xzH
+      sjrHrjSRFdVPSrOK2wSQvTbGjNJIR5091nIl2XHHlzoCCelGblQob7LJa/DyxjBmeBJGL0HB
+      XitPleI2AejhZr78dJsVttwRRbUuU7D2EUQ9gr0tBbwqRGSFK33r0Lo7yZ8ZoTA2XtrlqmFu
+      +3iVVQ1Ntc+nrqTYx5Zao94r2NdaGvwAkaKBJEnIXi/e7VvwPzSIEqu/900cju1Hl+zOABWh
+      2W8w2FLAc9PbGzaKt1yjRCL49u3GO7ADyWsPl7jc2H4ZVNVtb6LDELQGTAaainx6og/fYc9F
+      kmW0thbUpgby50fJn7sANbQwYfsZQPff+VBTlwdB0BE02XWHwQ8QNoy7+vySquLpW0fgkYOo
+      ba13vMaJ2P7j1RVAuRCsCZtsaSgi32Vp32+UihPv9fkuB/x4d27D6O4k9/EnmPGFShhbUYaG
+      juLx+mls73LADBCoTd+zugh6IwZb7zH4AfymiWref9VHkiTUWD3+g4N4t21xXHwQCNWxoX89
+      8ZlpB8wAPncGWAkSgg31BuvrDKT7bOp6TYGKYKnph5Iso3V1oDQ3kT93nsLoJXBI6ko6MY+s
+      ++0/A3hCXncl6IERbIotbfCvBNmj49nYX1o2bWq8/xMsxqvJzKYMulob7T8DSJKEL+InNeu2
+      RloOsiTYEivSEzaXNfgfNJFUkiSUcBjfngGM6SvkhkcwF+z5N+vo7L7xve1nAAB/XfD+F7nc
+      QEaws2n5gx/AZ65siVOSJNSWZvwHB/Fs2oCk2TuvyPYCkCQJX13g/he6AKBIgl3NRdoDyx/8
+      AKEyrfFLioK2phv/Yw+jdrRRUR9sBdheAADBhrDVJjgCTRbsaynQFnywwQ+ldIhyIUkSsq7j
+      3b4V/4F9KPXRst27XDhCAOEW+71xduP64G/0ryx5LVIs3v+iZSJJEkq0Dt/gHrw7tyP57LNs
+      avsgGCDYGEGSJcQS1qhXIz5VsLu5QL135e9P0KjcMqYky2jtrajNjaW0ivMXwOKSV0fMAJ6A
+      F09w+Q3QVgM+VbC/tTyDHyozA3yaG2kVDx9Abbc2rcIRAlB1lWCjGwd8moBqcrAtT0gv38x4
+      p4S4SiEHAnh3bMM3uAc5Ys3f1xECAKhrj93/olVEncfkYHuBQJlXGYOGgVTFIhhJklAbYvgP
+      DOLZuhnJW92df8cIoKGn2WoTbIIgopvsayngq0AEJ1MSQbWRFBm9uxP/wwfRetdUbdnUMQKI
+      tNYjr/rqMEGjT7C/7R+quMqNxGJatEXIHh3vpn78jxyoSlqFY0aUN+zHG/ZbbYalNPtN9n6q
+      iqvcSEDIBoeRKaEQvj0DeHftQA5WLhPAMQIAaNnYabUJFiFo8Rvsbr5zIUu5sXIGuBlJktBa
+      W/A/tB/Phr6KpFU4SgBN62qnEmnpCLpDJntaqjP4oTpLoctBUhX0db34Hz2I1tkBZTwqx1EC
+      iHY2omirKTW6NPi3Nd67kKXcVHMpdDnIXi+ebZtLaRXRuvLcsyx3qRKaVyfaaf9883IgIVhf
+      Z1R98IN9XKA7IUkSSl0E3/69pbSKFVajOUoAkiytKA7I5LM4I5miVMW1sd6o+uAH8Bsmis0P
+      xLqeVhF49CD6+rWgPJhnULVcoKuXTvPK4ZOYpslTD2/h+393lL17BhgdepNw8xq2rYkxrXSS
+      PPc28Rxs3tjDq2+dYf2mPg4N7uS1X/wNCxnoXdPLiYnL9EUDnI9nmZo8hUcP0NHcwkfnLlMX
+      8NLq89O2divmtQvMUE8hMc7ajn7OT44wn0qgaj6aw1E+PHecvq4tbGmK8sKRozyza5CT59/n
+      3LzMZ/q6uZTzoaYvkyiYeHwx1MwEWmwjJCYJeDTOJZO0hpuJz42C4sEXaCaXmWNTSwtjaYm+
+      B1jGkxaruNZGKlvFdS9008RjmqQfcFBVE0nT8PSvR+toJ3dmmOLE1LKeX7UZ4JOPR3jqy1/h
+      sYEuTp+bIlcwUBWVXDaLJEtIwiSXy5E0vXzpS88Q8wkKRRNVKWnUo6kYioeurjoUrw5CUDQM
+      NN1PW10d2XyOcKiRgK6SLxQwgbr6NcxMHkPxxhC5WTz+JhQEXm+YzqYuepo62daxhtHpCXZ2
+      tjCZldjR00dP63qiHpVCMUfK1Bjs300xN4/mjZGIXyZXLFA0i5iALCsISaOroRVhFumpC/Lm
+      6EXWNDQs+z2SpVIhy7oKlzDeD48Q+CuYFFcJ5IAf38AOfPv3ItdFlv68Ctp0C5GQztjELBcv
+      TVBfH2TXwcfZs62Pho61PP25J/FrIMkKmUScTCZFxlA4+NhneWjPVgDWbtnDozt7eO390+gh
+      nXQ2iap6MIwiur+JdbEohWKede39+G5aLmn0h4nVNzM6O0dPrJ4NPdsJFmcYS15vvicYn5tm
+      NplgbPrirUZLCsV8mnwhR3bxmPa+pmaGr1wBVLat3c76phaEMDg3fo5IqJ5YXSv1/hDaMn0X
+      RRLsaCzSGbJ+4ElYsxtcDtRYPf7BvXi2bETy3L8nsfKNb3zjG5U3Cxrbu7l46gN8rZvY2NtO
+      MBgk6NMJBAKEw2FkzUswFGF9Z4zD7x2lu3cdp468y8Rcmp6OVmbGzzM0coVHHz1ER7uHt9/4
+      hP7WdiKBCM2RGJKkEA03EAsEUBU4e3kEnz9K2BfApyvMJNK0RKKMXx0lq9SxNlaPV/fi1zWC
+      gQbWt/bi1xV8nmDp5x4fHt1HZ12Ej8cvsLlnMyGvj1CgnpCu01BXx9lLZ0kWDDobWunr6COb
+      TRD0LT5fX3pOiyqXqrjaHrCKqxJc9uhML2EA2RFJllHq6kqVaKZZqk2+24FfQtg82rkDQgje
+      fe7XXBkeX9L1ppEjayr4NfuVP6iLhSwNPnv9Gd6KhHhzGa6EnTEWEuQ+Gca4cvW2xxy1CnQd
+      SZLoGli75OtlxWPLwa/LgsGWArEy5fKXEzukQ5QLJXw9rWInUuDW+nJHCgCgua8dX8S5xfI+
+      RXCwrUDMJ2zj9txMXbFYU70BSmkVzaVl0751N9IqHCsA1aPRtrX7/hfaEL9qMthaIOyx7wAL
+      GGZNdgeTZBlP3zr8jxxA7WhzrgAAegc3OOzUOEFYNxlsLdp68AMETQPZ3iauCNnnw7t9q7MF
+      4I8GadnQYbUZSyasl+p3y1nCWCm8psArrF+SrSSSJDlbAABrD250RCfPqMdkf2vlClkqQS0F
+      wnfD8QKIdjQSs3m5ZKPPcNzgB3snxZULxwtAkiX6D22z6dF7gia/wZ6WIk7M4rZbXUAlcLwA
+      ABp6W4j1NFltxqcotSPa3VxEc+i77LpADkGSJfof22a1GTch6AqVGtE5dfCD6wI5isa1rTT0
+      tlhtBtfbEW1vLNrTK1sGYdcFchabPjuAZEUFyQ0E/VGDLTFrClnKzb26RtYKNSWAuo4YXQPr
+      LHltCcGGqEF/1Npc/nKimwJPjR9IXFMCkKRSLKB6q9uVREKwtaFIXw0NfgBVCAIr7Bhjd2pK
+      AAC+ugB9h6oXEMuUClkepB2R3bHqmMRqUnMCAOgd7K/KYbqKJBhoLtJVg4MfFo9JrPGl0JoU
+      gKKpbH5qd0XPElUkwd6WAu3B2s6XcQXgUBrWNNOzt68i99bl0uBvWmE7IidQ63sBNSsAgA1P
+      7CAQC5X1nl5FMNi6OgY/1P5eQE0LQPPq7PytA2Vzha4P/qgNSxgrRbjKDTOqTU0LACDW00xf
+      GdIkAprJgbYCEZsXspQbr2miugJwNuse3kx914OfKRrUTA62OaOQpdz4DRPdFYCzUVSF3b/z
+      yAN0miy1IzrQVpl2RE5AAQI1HAivCgEA+CIBBr5ycFnxQMNiO6LVOvivU8tLoatGAACN61rp
+      f3wp8YCgwWuyt7my7YicQi0XxqwqAUiSxPpHttK+receVwnaAib7WguOrOKqBCHXBaodJFli
+      +5cG71pB1hE02VWlXlxOwXWBagzNq7Prtx8h2HBzd3JBd8hghwUdWexOxBVA7eEL+9n7Tw6h
+      +z1wUzuiVd+K+A64LlCNEmqqY/Crj7OpTbOsHZETCNXwbvCqFgCUOk+u/8rjSHp1i2ichNXd
+      4yvJqhcAAM0t8OjjD9xobTVQq0ekuAK4TmcnPP4E6M7silJJJGo3DnAFcB1Jgs4u+OznwbP0
+      9karhVpdCnUF8GmamuHJz8EKGzDXGrW4G9wYCLoCuCNNzfCF34RIndWW2IZaC4J7ojF+Z+de
+      VwB3JRKBL3wRWlqttsQW1JILtKWljS9vHyDo8bgCuCdeX8kd6l16Q75axW8aKDVwSNb+7l6e
+      3rgVfbEB+ypP9F0CmgaHHodYA3z0AZi1fQrE3dBNgdc0ScnOXCr2qhpf2LSVvsZbe0m4Algq
+      W7ZCLAZvvAbptNXWVB1dCHymSQrnCaAhEOQ3N2+nORS+7THXBVoqkgRt7aXguLXNamuqjhP3
+      AiRK/v5Xdw/ecfCDQzvFW45pwNAxOH4cjNpbHrwbP6+v41goaLUZS8Kv6TzRt5HNLff+sHJd
+      oAdBVmDnLmjvgLfegPl5qy2qCk5ZCeqO1vO5/s3EAvcXqzsDrJRCAY4dhVMnaj5APh7w87OG
+      eqvNuCteVeOh3nXsau9Clpfm3bszwErRNNi9B7p74P134cq01RZVjLpisdQww4YnAfc1NnNo
+      bd+SPvVvxp0ByolhwOmPYego5HJWW1N2ZlWVv2xrxrSRACJeH4+v30BfQ9ONT/3jx4+zbdtG
+      jh8fIaSlOfbJJbo3bKcwc4GTw6PsffhJtvbV88PnfurOAGVFUUrLpWt64fgxGB6uqSA5YBgo
+      QthCAF5VY1/3GnZ3dKOrtw7jj08cIxTSGT53EUXK8uyzz/LSSy/xzDPPcDX+Mlv7uoAZ8obP
+      FUBFCARg8AD0bShtno1dttqisuAVAo9pUliif10JVFlmS0s7g91riPoDd7zGKORJp9MYpkBV
+      7i7WfD7nCqBiSFJp4+zJz8H0NAwdgYkJxzedCxkmSQtGjSrLbG5pY7C7l6jPj3SPWWjT9l1s
+      3ryZfF4npKZ58cUX6VhfOg+qvb198SoPA3t3uTFA1RBiUQhHYXLCsStGP2mo50zAX7XXU2WZ
+      Tc2t7OvupWGZAe6S7l/2O7rcGUmClhZo/nxp3+D0KTg7XAqcHUS1jkjxazpbW9vZ0d5J/V1c
+      nXLgzgBWIQRk0jByFobPwMKC1RYtifdDQX5VX5k6CVmSaAqG2N7WyeaWNnRFuaerUw5cAdgB
+      04TxMTg3UgqY83mrLborZ3xeftLUUNZ7BnUP6xub2N7WQXMoglzFVSbXBbIDslyqR+7ohEwG
+      Ll+C0fOlmMFmpYjlSojzaRprY41saGqhOxq7bSmzWrgzwDJIp1JoKqTyMkFdUJS9JK9NkhMe
+      YhEfqidAPpNCUWBsbJL65jaiIT/xazP46xoopuYRegjJyKF7faTmZ1jIQcQrMTUzR31jK7G6
+      mwK9TAbGLsH4OExPQSpl3S+/SEqW+fOO1mXvBkuSRJ3XR3c0xvrGJrqjMTQbHEPjzgDL4PCr
+      r7JpjY8fHjH43W1wVl7P5JlT9K7tZvrMRVoGvsjp11+lpS3CxZRO8ugJfusfPcvPf/JX9B74
+      XdITx8iKMEElzfqN/fz6rRNs2bKBTy4O09GzFvPTn0U+H6zvL30VCnDtGkxNwNRUKeWiUKj6
+      e6AJgUcIcksQQMjjpSkYYk2sga66emKBIKqFewh3whXAcpFUNnaFOXVhmPD2A0T0LKOXJ1kT
+      ufkig9GzZ2hp7qBw9RO8HfsZP3eS+nCQFq3A8FSW6IXT9O97gq1dPiaGjzIyMoIajNEYvUtX
+      S02D5ubS1zZRWj1aiMPUJFy9WlpZWoiXXKYKTuqKEAQNg9xNA1mWJDyKSr0/QGMwREddHS2h
+      CPX+ALIkVTyQXQmuAB6Azg07OfLcj/Bt/iyRWAfXhkfwr13LkfcOE0/k6CbKnn0DXBy+xOEP
+      h4kE6hm7OIPH185Dg3t48Q//E4f+9T/jldf/DuIbkHUfnW2dBLxLPJRLkkBVoT5W+rpOsQiJ
+      BMTnIR6HVLL0/6kk5PJQLDyYQCQZNBU0DcXjpT/WSC4cps7np87rpz4QIOL12cKlWS5uDLAM
+      spkMmiphyl6KmTiyJ8jC7DSKL0w07Ofq9BTeUD1+TUIoGmY+Q96QCAb8FPJZitoTZIUAAABP
+      SURBVCb4fV4W4nGCoTDpxBypgkRQl7gWTxCuixEJVWCTyTRLA980SzNHPg+5bOn761/XN+YU
+      pRSUy3Jp1vF4SqflyUrpMVW1ZTbog/L/AYjREi2I7nfWAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
